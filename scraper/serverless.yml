@@ -2,9 +2,9 @@ service: my-sls-scraper
 
 provider:
   name: aws
-  runtime: python3.7
+  runtime: python3.9
   logRetentionInDays: 1
-  profile: my-sls-admin
+  profile: sls-scraper
 
   environment:
     FEED_BUCKET_NAME: !Ref ScraperFeedBucket
